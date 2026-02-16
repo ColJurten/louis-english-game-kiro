@@ -1,0 +1,17 @@
+{
+  "name": "english-game-mds",
+  "version": "1.0.0",
+  "description": "English Game landing page - MDS Project",
+  "scripts": {
+    "sass": "sass styles/main.scss styles/main.css",
+    "sass:watch": "sass styles/main.scss styles/main.css --watch",
+    "serve": "npx serve",
+    "dev": "sass styles/main.scss styles/main.css --watch"
+  },
+  "keywords": ["html", "scss", "landing-page"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

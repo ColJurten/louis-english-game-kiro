@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+*.log
+.sass-cache/
+styles/main.css.map
+.vscode/
+
+# Optional: Uncomment to exclude original TSX icon files
+# assets/icons/*.tsx
+# assets/icons/Nav/*.tsx
