@@ -1,0 +1,11 @@
+@use 'variables' as *;
+
+// ============================================
+// BASE STYLES
+// ============================================
+body {
+  font-family: 'Inter', sans-serif;
+  color: $neutral900;
+  background-color: $neutral100;
+  overflow-x: hidden;
+}

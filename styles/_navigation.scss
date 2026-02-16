@@ -1,0 +1,172 @@
+@use 'variables' as *;
+
+// ============================================
+// NAVIGATION HEADER
+// ============================================
+.nav-header {
+  background-color: $primary700;
+  padding: $spacing-2 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $spacing-2;
+
+    @media screen and (min-width: 769px) {
+      padding: 0 $spacing-3;
+      gap: $spacing-4;
+    }
+  }
+
+  &__logo {
+    flex-shrink: 0;
+
+    img {
+      height: 32px;
+      width: auto;
+
+      @media screen and (min-width: 769px) {
+        height: 40px;
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: 769px) {
+      display: flex;
+      align-items: center;
+      gap: $spacing-2;
+      flex: 1;
+    }
+
+    @media screen and (min-width: 1024px) {
+      gap: $spacing-3;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: $neutral0;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 14px;
+      padding: 8px 12px;
+      gap: 8px;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+    opacity: 0.9;
+
+    @media screen and (min-width: 1024px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: $spacing-1;
+
+    @media screen and (min-width: 769px) {
+      gap: $spacing-2;
+    }
+  }
+
+  &__notification {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+
+    @media screen and (min-width: 769px) {
+      padding: 8px;
+    }
+
+    svg {
+      width: 16px;
+      height: auto;
+
+      @media screen and (min-width: 769px) {
+        width: 19px;
+      }
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    transition: opacity 0.2s;
+
+    @media screen and (min-width: 769px) {
+      gap: 8px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, $primary300 0%, $primary500 100%);
+    border: 2px solid $neutral0;
+
+    @media screen and (min-width: 769px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__dropdown {
+    stroke: $neutral0;
+    stroke-width: 2;
+    fill: none;
+    width: 10px;
+    height: auto;
+
+    @media screen and (min-width: 769px) {
+      width: 12px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +10,61 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
+    <!-- Navigation Header -->
+    <header class="nav-header">
+        <div class="nav-header__container">
+            <div class="nav-header__logo">
                 <img src="assets/mds.png" alt="MDS Logo">
             </div>
-            <div class="header__actions">
-                <button class="header__icon" aria-label="Notifications">
-                    <svg width="19" height="24" viewBox="0 0 19 24" xmlns="http://www.w3.org/2000/svg" fill="white">
-                        <path d="M18.0366 14.9882L16.8365 12.9961C16.5845 12.5521 16.3565 11.7121 16.3565 11.2201V8.18409C16.3565 5.36406 14.7004 2.92803 12.3122 1.78802C11.6881 0.684008 10.5361 0 9.21596 0C7.90786 0 6.73177 0.708008 6.10773 1.82402C3.76755 2.98803 2.14743 5.40006 2.14743 8.18409V11.2201C2.14743 11.7121 1.91942 12.5521 1.6674 12.9841L0.455309 14.9882C-0.0247265 15.7922 -0.132735 16.6802 0.167287 17.4962C0.455309 18.3002 1.13936 18.9242 2.02743 19.2242C4.3556 20.0162 6.80378 20.4002 9.25196 20.4002C11.7001 20.4002 14.1483 20.0162 16.4765 19.2362C17.3166 18.9602 17.9646 18.3242 18.2766 17.4962C18.5887 16.6682 18.5046 15.7562 18.0366 14.9882Z" />
-                        <path d="M12.6246 21.6119C12.1206 23.0039 10.7885 23.9999 9.22837 23.9999C8.2803 23.9999 7.34423 23.6159 6.68418 22.9319C6.30015 22.5719 6.01213 22.0919 5.84412 21.5999C6.00013 21.6239 6.15614 21.6359 6.32415 21.6599C6.60017 21.6959 6.88819 21.7319 7.17621 21.7559C7.86027 21.8159 8.55632 21.8519 9.25237 21.8519C9.93642 21.8519 10.6205 21.8159 11.2925 21.7559C11.5445 21.7319 11.7966 21.7199 12.0366 21.6839C12.2286 21.6599 12.4206 21.6359 12.6246 21.6119Z" />
+            <nav class="nav-header__menu">
+                <a href="#planning" class="nav-header__link">
+                    <svg class="nav-header__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <rect width="6" height="6" rx="1"/>
+                        <rect x="10" width="6" height="6" rx="1"/>
+                        <rect y="10" width="6" height="6" rx="1"/>
+                        <rect x="10" y="10" width="6" height="6" rx="1"/>
+                    </svg>
+                    Planning
+                </a>
+                <a href="#project" class="nav-header__link">
+                    <svg class="nav-header__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M2 2h12v12H2z"/>
+                    </svg>
+                    Project
+                </a>
+                <a href="#learning" class="nav-header__link">
+                    <svg class="nav-header__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <circle cx="8" cy="8" r="6"/>
+                    </svg>
+                    Learning
+                </a>
+                <a href="#badges" class="nav-header__link">
+                    <svg class="nav-header__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z"/>
+                    </svg>
+                    Badges
+                </a>
+                <a href="#ranking" class="nav-header__link">
+                    <svg class="nav-header__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <rect x="6" y="2" width="4" height="14"/>
+                        <rect y="8" width="4" height="8"/>
+                        <rect x="12" y="6" width="4" height="10"/>
+                    </svg>
+                    Ranking
+                </a>
+            </nav>
+            <div class="nav-header__actions">
+                <button class="nav-header__notification" aria-label="Notifications">
+                    <svg width="19" height="24" viewBox="0 0 19 24" fill="white">
+                        <path d="M18.0366 14.9882L16.8365 12.9961C16.5845 12.5521 16.3565 11.7121 16.3565 11.2201V8.18409C16.3565 5.36406 14.7004 2.92803 12.3122 1.78802C11.6881 0.684008 10.5361 0 9.21596 0C7.90786 0 6.73177 0.708008 6.10773 1.82402C3.76755 2.98803 2.14743 5.40006 2.14743 8.18409V11.2201C2.14743 11.7121 1.91942 12.5521 1.6674 12.9841L0.455309 14.9882C-0.0247265 15.7922 -0.132735 16.6802 0.167287 17.4962C0.455309 18.3002 1.13936 18.9242 2.02743 19.2242C4.3556 20.0162 6.80378 20.4002 9.25196 20.4002C11.7001 20.4002 14.1483 20.0162 16.4765 19.2362C17.3166 18.9602 17.9646 18.3242 18.2766 17.4962C18.5887 16.6682 18.5046 15.7562 18.0366 14.9882Z"/>
+                        <path d="M12.6246 21.6119C12.1206 23.0039 10.7885 23.9999 9.22837 23.9999C8.2803 23.9999 7.34423 23.6159 6.68418 22.9319C6.30015 22.5719 6.01213 22.0919 5.84412 21.5999C6.00013 21.6239 6.15614 21.6359 6.32415 21.6599C6.60017 21.6959 6.88819 21.7319 7.17621 21.7559C7.86027 21.8159 8.55632 21.8519 9.25237 21.8519C9.93642 21.8519 10.6205 21.8159 11.2925 21.7559C11.5445 21.7319 11.7966 21.7199 12.0366 21.6839C12.2286 21.6599 12.4206 21.6359 12.6246 21.6119Z"/>
                     </svg>
                 </button>
-                <button class="header__profile" aria-label="Profile">
-                    <div class="header__profile-placeholder"></div>
+                <button class="nav-header__profile" aria-label="User profile">
+                    <div class="nav-header__avatar"></div>
+                    <svg class="nav-header__dropdown" width="12" height="8" viewBox="0 0 12 8" fill="white">
+                        <path d="M1 1l5 5 5-5"/>
+                    </svg>
                 </button>
             </div>
         </div>
@@ -36,16 +76,19 @@
             <div class="hero__content">
                 <h1 class="hero__title">Welcome to the English Game</h1>
                 <p class="hero__description">
-                    An immersive challenge to practice and improve your english level through an inter-school competition. For one week, you will work with a full serious game. Be prepared to get involved, create the best game and challenge yourself!
+                    An immersive challenge to practice and improve your english level through an inter-school competition.
+                    For one week, you will work with your team to design a full serious game. Be prepared to get involved,
+                    create the best game and challenge yourself!
                 </p>
+                <button class="hero__cta">Discover the program</button>
             </div>
-            <div class="hero__video">
-                <div class="hero__video-wrapper">
-                    <img src="assets/video.png" alt="Welcome video">
-                    <button class="hero__play-button" aria-label="Play video">
-                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                            <circle cx="32" cy="32" r="32" fill="white"/>
-                            <path d="M26 20L44 32L26 44V20Z" fill="#0f878f"/>
+            <div class="hero__media">
+                <div class="hero__video-card">
+                    <img src="assets/video.png" alt="Welcome video" class="hero__video-thumbnail">
+                    <button class="hero__play-btn" aria-label="Play video">
+                        <svg width="48" height="48" viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="24" fill="white"/>
+                            <path d="M19 15l14 9-14 9V15z" fill="#0f878f"/>
                         </svg>
                     </button>
                 </div>
@@ -53,54 +96,297 @@
         </div>
     </section>
 
-    <!-- Mission Section -->
-    <section class="mission">
-        <div class="mission__container">
-            <h2 class="mission__title">Your first mission: complete the self-assessment quiz</h2>
-            <p class="mission__date s-bold">From today to thursday, 10th of November 2025</p>
-            <p class="mission__description s">
-                Ce premier quiz va te permettre de nous dire si tu es à l'aise en anglais et quel rôle tu as envie de jouer pendant le challenge, pour nous permettre de créer les équipes.
-            </p>
-            <button class="mission__button">Répondre au quiz</button>
+    <!-- What's in Store Section -->
+    <section class="benefits">
+        <div class="benefits__container">
+            <h2 class="benefits__title">What does the challenge have in store for you?</h2>
+            <div class="benefits__grid">
+                <article class="benefit-card">
+                    <div class="benefit-card__image">
+                        <img src="assets/three-people.png" alt="Team collaboration">
+                    </div>
+                    <h3 class="benefit-card__title">An experience based on fun, learning and practice</h3>
+                    <p class="benefit-card__text">
+                        We hope that your week will be filled with learning and hands-on experience, but most of all
+                        that you will have lots of fun and enjoyment!
+                    </p>
+                </article>
+                <article class="benefit-card">
+                    <div class="benefit-card__image">
+                        <img src="assets/one-guy.png" alt="Game expert">
+                    </div>
+                    <h3 class="benefit-card__title">The basics of serious games through videos and quizzes</h3>
+                    <p class="benefit-card__text">
+                        A team of serious game experts will join you in the English Game to share their experience
+                        and teach you the fundamentals of game mechanics.
+                    </p>
+                </article>
+                <article class="benefit-card">
+                    <div class="benefit-card__image">
+                        <img src="assets/two-girls-one-skrew-diver.png" alt="Project design">
+                    </div>
+                    <h3 class="benefit-card__title">Tools to design a project from A to Z</h3>
+                    <p class="benefit-card__text">
+                        Each day will be based on a design process. From Monday to Friday, you will be supported as you
+                        design a project: define the concept, the level design, and the prototype, right up to producing
+                        the final game to present for the national competition.
+                    </p>
+                </article>
+            </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="features__container">
-            <h2 class="features__title">What's in store for you during this challenge?</h2>
-            <div class="features__grid">
-                <!-- Feature Card 1 -->
-                <article class="feature-card">
-                    <div class="feature-card__image">
-                        <img src="assets/three-people.png" alt="Three people illustration">
+    <!-- Schedule Section -->
+    <section class="schedule" id="planning">
+        <div class="schedule__container">
+            <h2 class="schedule__title">Schedule</h2>
+            <p class="schedule__subtitle">
+                Here's the programme for the week, with what's happening each day for the English Game.
+                You can see each day in more detail at the bottom of the schedule.
+            </p>
+            
+            <div class="schedule__calendar">
+                <div class="schedule__scroll-hint">← Scroll to see all days →</div>
+                <div class="schedule__days">
+                    <div class="schedule__day">
+                        <span class="schedule__day-name">Monday</span>
+                        <span class="schedule__day-number">1</span>
                     </div>
-                    <h3 class="feature-card__title">An experience based on fun, learning and practice</h3>
-                    <p class="feature-card__description s">
-                        We hope that your week will be filled with learning and hands-on experience, but most of all that you will have lots of fun and enjoyment!
-                    </p>
+                    <div class="schedule__day">
+                        <span class="schedule__day-name">Tuesday</span>
+                        <span class="schedule__day-number">3</span>
+                    </div>
+                    <div class="schedule__day">
+                        <span class="schedule__day-name">Wednesday</span>
+                        <span class="schedule__day-number">4</span>
+                    </div>
+                    <div class="schedule__day">
+                        <span class="schedule__day-name">Thursday</span>
+                        <span class="schedule__day-number">5</span>
+                    </div>
+                    <div class="schedule__day">
+                        <span class="schedule__day-name">Friday</span>
+                        <span class="schedule__day-number">6</span>
+                    </div>
+                </div>
+
+                <div class="schedule__grid">
+                    <!-- Monday -->
+                    <div class="schedule__column">
+                        <div class="schedule__event schedule__event--dark">09:00<br>Kick-off</div>
+                        <div class="schedule__event schedule__event--light">Ice-breaker</div>
+                        <div class="schedule__event schedule__event--beige">#relying</div>
+                        <div class="schedule__event schedule__event--beige">#relying<br>#analyser/braingame</div>
+                        <div class="schedule__event schedule__event--gray">Lunch</div>
+                        <div class="schedule__event schedule__event--beige">#brainstorming</div>
+                        <div class="schedule__event schedule__event--beige">#gameidea</div>
+                        <div class="schedule__event schedule__event--beige">#concept</div>
+                        <div class="schedule__event schedule__event--orange schedule__event--with-icon">
+                            Concept doc
+                            <svg class="schedule__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 0l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z"/>
+                            </svg>
+                        </div>
+                        <button class="schedule__details-btn">View details</button>
+                    </div>
+
+                    <!-- Tuesday -->
+                    <div class="schedule__column">
+                        <div class="schedule__event schedule__event--beige">#leveldesign</div>
+                        <div class="schedule__event schedule__event--beige">#wireframe</div>
+                        <div class="schedule__event schedule__event--beige">Introducing mockup</div>
+                        <div class="schedule__event schedule__event--gray">Lunch</div>
+                        <div class="schedule__event schedule__event--beige">Vocabulary<br>under game</div>
+                        <div class="schedule__event schedule__event--beige">#mockup</div>
+                        <div class="schedule__event schedule__event--beige">#rules</div>
+                        <div class="schedule__event schedule__event--orange schedule__event--with-icon">
+                            Level design mockup
+                            <svg class="schedule__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 0l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z"/>
+                            </svg>
+                        </div>
+                        <div class="schedule__event schedule__event--orange schedule__event--with-icon">
+                            Rules (V1)
+                            <svg class="schedule__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 0l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z"/>
+                            </svg>
+                        </div>
+                        <button class="schedule__details-btn">View details</button>
+                    </div>
+
+                    <!-- Wednesday -->
+                    <div class="schedule__column">
+                        <div class="schedule__event schedule__event--beige">#wireframe</div>
+                        <div class="schedule__event schedule__event--beige">#techreview</div>
+                        <div class="schedule__event schedule__event--gray">Lunch</div>
+                        <div class="schedule__event schedule__event--beige">#graphicdesign</div>
+                        <div class="schedule__event schedule__event--beige">#prototype</div>
+                        <div class="schedule__event schedule__event--beige">#content</div>
+                        <div class="schedule__event schedule__event--beige">#digitalization</div>
+                        <div class="schedule__event schedule__event--orange schedule__event--with-icon">
+                            Printable prototype
+                            <svg class="schedule__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 0l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z"/>
+                            </svg>
+                        </div>
+                        <button class="schedule__details-btn">View details</button>
+                    </div>
+
+                    <!-- Thursday -->
+                    <div class="schedule__column">
+                        <div class="schedule__event schedule__event--beige">#enhancement</div>
+                        <div class="schedule__event schedule__event--gray">Lunch</div>
+                        <div class="schedule__event schedule__event--beige">#usertest</div>
+                        <div class="schedule__event schedule__event--beige">#gameiteration</div>
+                        <div class="schedule__event schedule__event--beige">#editing</div>
+                        <button class="schedule__details-btn">View details</button>
+                    </div>
+
+                    <!-- Friday -->
+                    <div class="schedule__column">
+                        <div class="schedule__event schedule__event--orange">#polishing</div>
+                        <div class="schedule__event schedule__event--orange">Video demo</div>
+                        <div class="schedule__event schedule__event--orange">Final game</div>
+                        <div class="schedule__event schedule__event--gray">Lunch</div>
+                        <div class="schedule__event schedule__event--beige">#polishing</div>
+                        <div class="schedule__event schedule__event--dark">15:15<br>Project management<br>debrief</div>
+                        <div class="schedule__event schedule__event--dark">16:15<br>Pitch or in-school<br>contest</div>
+                        <div class="schedule__event schedule__event--beige">#coselection</div>
+                        <button class="schedule__details-btn">View details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Project Section -->
+    <section class="project" id="project">
+        <div class="project__container">
+            <h2 class="project__title">My project</h2>
+            <p class="project__subtitle">
+                This is where you can see the deliverables your team needs to submit during the week. Click on
+                "Go to My Project" to find out what's on the My Project page.
+            </p>
+            <button class="project__cta">Go to my project</button>
+
+            <div class="project__cards">
+                <article class="project-card">
+                    <div class="project-card__icon project-card__icon--orange">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="white">
+                            <path d="M16 4l4 12h12l-10 8 4 12-10-8-10 8 4-12-10-8h12z"/>
+                        </svg>
+                    </div>
+                    <h3 class="project-card__title">Rules V1</h3>
+                    <p class="project-card__date">Due date: Tuesday 12:30 PM</p>
+                    <div class="project-card__upload">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 4v12m0-12l-4 4m4-4l4 4M4 16v4h16v-4"/>
+                        </svg>
+                        <p>Drag and drop or choose file to upload</p>
+                        <span class="project-card__file-info">Fichier pas en charge : pdf, zip | Max 35MB</span>
+                    </div>
+                    <button class="project-card__btn">Download template</button>
                 </article>
 
-                <!-- Feature Card 2 -->
-                <article class="feature-card">
-                    <div class="feature-card__image">
-                        <img src="assets/one-guy.png" alt="Person with presentation illustration">
+                <article class="project-card">
+                    <div class="project-card__icon project-card__icon--teal">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="white">
+                            <rect x="4" y="8" width="24" height="16" rx="2"/>
+                            <path d="M4 12h24M8 8v4M24 8v4"/>
+                        </svg>
                     </div>
-                    <h3 class="feature-card__title">The basics of serious games through videos and quizzes</h3>
-                    <p class="feature-card__description s">
-                        A team of serious game experts will join you in the English Game to share their experience and teach you the fundamentals of game mechanics.
-                    </p>
+                    <h3 class="project-card__title">Level design mockup</h3>
+                    <p class="project-card__date">Due date: Tuesday 5 PM</p>
+                    <div class="project-card__upload">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 4v12m0-12l-4 4m4-4l4 4M4 16v4h16v-4"/>
+                        </svg>
+                        <p>Drag and drop or choose file to upload</p>
+                        <span class="project-card__file-info">Fichier pas en charge : pdf, zip | Max 35MB</span>
+                    </div>
+                    <button class="project-card__btn">Download template</button>
                 </article>
 
-                <!-- Feature Card 3 -->
-                <article class="feature-card">
-                    <div class="feature-card__image">
-                        <img src="assets/two-girls-one-skrew-diver.png" alt="Two people working illustration">
+                <article class="project-card project-card--completed">
+                    <div class="project-card__icon project-card__icon--teal">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="white">
+                            <circle cx="16" cy="16" r="12"/>
+                            <path d="M10 16l4 4 8-8" stroke="white" fill="none" stroke-width="2"/>
+                        </svg>
                     </div>
-                    <h3 class="feature-card__title">Tools to design a project from A to Z</h3>
-                    <p class="feature-card__description s">
-                        Each day will be based on a design process. From Monday to Friday, you will be supported as you design a project: define the concept, the level design, and the prototype, right up to producing the final game to present for the national competition.
-                    </p>
+                    <h3 class="project-card__title">Rules V1</h3>
+                    <p class="project-card__date">Sended on Tuesday 5 PM</p>
+                    <div class="project-card__status">
+                        <span class="project-card__status-label">Note: 21 / 20#effort!</span>
+                        <div class="project-card__progress">
+                            <div class="project-card__progress-bar"></div>
+                        </div>
+                    </div>
+                    <button class="project-card__btn project-card__btn--secondary">Modify this deliverable</button>
+                    <button class="project-card__btn">Download template</button>
+                    <p class="project-card__late">You're late!</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Section -->
+    <section class="learning" id="learning">
+        <div class="learning__container">
+            <h2 class="learning__title">Learning</h2>
+            <p class="learning__subtitle">
+                Here's an idea of what you will be learning about during the week. The information is provided in
+                video format and will help you and your team make your serious game as good as possible. Enjoy watching!
+            </p>
+            <button class="learning__cta">Go to learning</button>
+
+            <div class="learning__videos">
+                <article class="video-card">
+                    <div class="video-card__thumbnail">
+                        <img src="assets/video.png" alt="What are serious games?">
+                        <span class="video-card__badge">Monday</span>
+                    </div>
+                    <div class="video-card__content">
+                        <h3 class="video-card__title">What are serious games?</h3>
+                        <button class="video-card__play" aria-label="Play video">
+                            <svg width="40" height="40" viewBox="0 0 40 40">
+                                <circle cx="20" cy="20" r="20" fill="#ffbd1d"/>
+                                <path d="M15 12l12 8-12 8V12z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="video-card">
+                    <div class="video-card__thumbnail">
+                        <img src="assets/video.png" alt="Business case">
+                        <span class="video-card__badge">Monday</span>
+                    </div>
+                    <div class="video-card__content">
+                        <h3 class="video-card__title">Business case</h3>
+                        <button class="video-card__play" aria-label="Play video">
+                            <svg width="40" height="40" viewBox="0 0 40 40">
+                                <circle cx="20" cy="20" r="20" fill="#ffbd1d"/>
+                                <path d="M15 12l12 8-12 8V12z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="video-card">
+                    <div class="video-card__thumbnail">
+                        <img src="assets/video.png" alt="About fun and learning">
+                        <span class="video-card__badge">Monday</span>
+                    </div>
+                    <div class="video-card__content">
+                        <h3 class="video-card__title">About fun... and learning!</h3>
+                        <button class="video-card__play" aria-label="Play video">
+                            <svg width="40" height="40" viewBox="0 0 40 40">
+                                <circle cx="20" cy="20" r="20" fill="#ffbd1d"/>
+                                <path d="M15 12l12 8-12 8V12z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
                 </article>
             </div>
         </div>
@@ -109,16 +395,79 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer__container">
-            <p class="footer__credit xs">Made by MyDigitalSchool</p>
-            <nav class="footer__nav">
-                <a href="#" class="footer__link xs">Terms of Service</a>
-                <span class="footer__separator">|</span>
-                <a href="#" class="footer__link xs">Credits</a>
-                <span class="footer__separator">|</span>
-                <a href="#" class="footer__link xs">F.A.Q</a>
-                <span class="footer__separator">|</span>
-                <a href="#" class="footer__link xs">Ticket</a>
-            </nav>
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <h4 class="footer__heading">Planning</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Monday</a></li>
+                        <li><a href="#" class="footer__link">Tuesday</a></li>
+                        <li><a href="#" class="footer__link">Wednesday</a></li>
+                        <li><a href="#" class="footer__link">Thursday</a></li>
+                        <li><a href="#" class="footer__link">Friday</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__heading">Project</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">My project</a></li>
+                        <li><a href="#" class="footer__link">Other project</a></li>
+                    </ul>
+                    <h4 class="footer__heading footer__heading--spaced">Fun & competition</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Ranking</a></li>
+                        <li><a href="#" class="footer__link">Achievements</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__heading">Learning</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">What are serious games?</a></li>
+                        <li><a href="#" class="footer__link">Business case</a></li>
+                        <li><a href="#" class="footer__link">About fun... and learning</a></li>
+                        <li><a href="#" class="footer__link">Digital add-ons: how to enrich your game?</a></li>
+                        <li><a href="#" class="footer__link">The 4 player profiles</a></li>
+                        <li><a href="#" class="footer__link">Flow concept</a></li>
+                        <li><a href="#" class="footer__link">Serious game level design</a></li>
+                        <li><a href="#" class="footer__link">Game rules</a></li>
+                        <li><a href="#" class="footer__link">User tests</a></li>
+                        <li><a href="#" class="footer__link">Exploiting user test!</a></li>
+                        <li><a href="#" class="footer__link">How not to make a demo video</a></li>
+                        <li><a href="#" class="footer__link">Pitch your project in english!</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__heading">Glossary</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Gameplay</a></li>
+                        <li><a href="#" class="footer__link">Algorithms</a></li>
+                        <li><a href="#" class="footer__link">Relational databases</a></li>
+                        <li><a href="#" class="footer__link">Traffic acquisition</a></li>
+                        <li><a href="#" class="footer__link">Editorial line & calendar</a></li>
+                        <li><a href="#" class="footer__link">Brand style guide</a></li>
+                        <li><a href="#" class="footer__link">Wireframes: design & methodology</a></li>
+                        <li><a href="#" class="footer__link">Graphic design culture</a></li>
+                        <li><a href="#" class="footer__link">HTML / CSS</a></li>
+                        <li><a href="#" class="footer__link">Green IT & eco-design</a></li>
+                        <li><a href="#" class="footer__link">Conversion funel</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__credit">Made by MyDigitalSchool</p>
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">Terms of Service</a>
+                    <span class="footer__separator">|</span>
+                    <a href="#" class="footer__legal-link">Credits</a>
+                    <span class="footer__separator">|</span>
+                    <a href="#" class="footer__legal-link">F.A.Q</a>
+                    <span class="footer__separator">|</span>
+                    <a href="#" class="footer__legal-link">Ticket</a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

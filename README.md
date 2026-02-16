@@ -1,114 +1,107 @@
 # English Game - MDS Project
 
-A pixel-perfect implementation of the English Game landing page using HTML and SCSS.
+A comprehensive landing page for the English Game challenge, featuring a multi-section layout with navigation, schedule calendar, project cards, learning videos, and footer.
 
-## Tech Stack
+## Features
 
-- HTML5
-- SCSS (Sass)
-- No JavaScript
-- No CSS frameworks
+- **Responsive Navigation**: Sticky header with menu items and user profile (desktop only, mobile shows logo and actions)
+- **Hero Section**: Welcome message with video player and wave border transition
+- **Benefits Section**: Three-column grid showcasing program benefits (single column on mobile)
+- **Schedule Calendar**: Interactive weekly schedule with color-coded events and horizontal scroll on mobile
+- **Project Cards**: Deliverable tracking with upload functionality (stacked on mobile)
+- **Learning Videos**: Video library with categorized content (single column on mobile)
+- **Footer**: Multi-column footer with comprehensive links (responsive grid)
+- **Wave Borders**: Smooth curved transitions between sections for visual flow
 
-## Design System
+## Mobile Optimizations
 
-- **Font**: Inter (400, 600, 800)
-- **Colors**: Primary (teal), Secondary (yellow/orange), Neutral
-- **Spacing**: 8px grid system
-- **Responsive**: Mobile-first approach
-
-## Quick Start
-
-### 1. Install Dependencies
-
-```bash
-npm install
-```
-
-### 2. Compile SCSS
-
-Development mode (auto-compile on save):
-```bash
-npm run dev
-```
-
-Or single compilation:
-```bash
-npm run sass
-```
-
-### 3. View the Site
-
-Simply open `index.html` in your browser, or use a local server:
-
-```bash
-# Using npx serve
-npm run serve
-
-# Or using Python
-python -m http.server 8000
-
-# Or using VS Code Live Server extension
-```
+- **Navigation**: Simplified mobile header with logo and essential actions only
+- **Calendar**: Horizontal scrolling for weekly schedule with visual scroll hint
+- **Typography**: Responsive font sizes that scale down on mobile
+- **Spacing**: Reduced padding and margins for better mobile fit
+- **Touch-friendly**: Larger tap targets and smooth scrolling
+- **Single column layouts**: All grids collapse to single column on mobile
 
 ## Project Structure
 
 ```
 ├── assets/
-│   ├── icons/          # SVG icon components (TSX)
+│   ├── icons/          # SVG icons
 │   ├── mds.png         # Logo
-│   ├── video.png       # Video thumbnail
+│   ├── video.png       # Video thumbnails
 │   └── *.png           # Illustrations
-├── maquette/           # Design mockups
 ├── styles/
-│   ├── _variables.scss # Colors, spacing, breakpoints
-│   ├── _reset.scss     # CSS reset
+│   ├── main.scss       # Main stylesheet (organized by sections)
+│   ├── _variables.scss # Design tokens (colors, spacing)
 │   ├── _typography.scss # Typography system
-│   ├── main.scss       # Main styles & components
-│   └── main.css        # Compiled CSS (generated)
+│   ├── _reset.scss     # CSS reset
+│   └── main.css        # Compiled CSS
 ├── index.html          # Main HTML file
-├── package.json        # NPM configuration
-└── README.md
+└── package.json        # Dependencies
 ```
 
-## Features
+## SCSS Architecture
 
-- ✅ Pixel-perfect implementation based on maquette
-- ✅ Fully responsive (desktop & mobile)
-- ✅ Semantic HTML5
-- ✅ BEM methodology for CSS
-- ✅ 8px spacing grid system
-- ✅ Modern SCSS with @use syntax
-- ✅ Accessible markup
+The SCSS has been refactored for better readability and maintainability:
+
+### Organization
+- **Clear section comments**: Each major component is clearly labeled
+- **Logical grouping**: Related styles are grouped together
+- **Consistent naming**: BEM methodology for class names
+- **Responsive design**: Mobile-first approach with media queries
+
+### Key Sections
+1. Base Styles
+2. Navigation Header
+3. Hero Section
+4. Benefits Section
+5. Schedule Section
+6. Project Section
+7. Learning Section
+8. Footer
+
+### Design System
+- **Colors**: Primary (teal), Secondary (yellow), Neutral palette
+- **Spacing**: 8px base unit system ($spacing-1 to $spacing-10)
+- **Typography**: Inter font family with defined scales
+- **Breakpoints**: Responsive at 640px, 768px, 968px, 1024px
 
 ## Development
 
-The SCSS is organized into modular files:
+### Install Dependencies
+```bash
+npm install
+```
 
-- `_variables.scss` - All design tokens (colors, spacing, breakpoints)
-- `_reset.scss` - CSS reset for consistent cross-browser styling
-- `_typography.scss` - Complete typography system
-- `main.scss` - Component styles and layout
+### Compile SCSS
+```bash
+npm run sass
+```
+
+### Watch Mode (auto-compile on save)
+```bash
+npm run sass:watch
+```
+
+### Local Server
+```bash
+npm run serve
+```
+
+## Design Highlights
+
+- **Color-coded schedule**: Different event types use distinct colors for easy scanning
+- **Card-based layout**: Consistent card design across sections
+- **Smooth interactions**: Hover states and transitions throughout
+- **Accessibility**: Semantic HTML and ARIA labels
+- **Visual hierarchy**: Clear typography scale and spacing system
 
 ## Browser Support
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+- Modern browsers (Chrome, Firefox, Safari, Edge)
+- CSS Grid and Flexbox support required
+- Responsive design for mobile, tablet, and desktop
 
-## Git Workflow
+## Credits
 
-```bash
-# Initialize git (if not already done)
-git init
-
-# Add files
-git add .
-
-# Commit
-git commit -m "Initial commit: HTML/SCSS implementation"
-
-# Add remote and push
-git remote add origin <your-repo-url>
-git push -u origin main
-```
+Made by MyDigitalSchool
