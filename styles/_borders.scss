@@ -1,12 +1,5 @@
-// ============================================
-// SECTION CURVED BORDERS
-// ============================================
-// This creates subtle curved borders between sections
-// The borders curve at the edges only, with straight middle
-
 @use 'variables' as *;
 
-// Mixin for curved section borders
 @mixin curved-section-border($height-mobile: 30px, $height-desktop: 40px, $radius-mobile: 50px, $radius-desktop: 60px) {
   content: '';
   position: absolute;
